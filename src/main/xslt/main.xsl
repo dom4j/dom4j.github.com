@@ -47,9 +47,9 @@
                                         <a class="dropdown-item" href="http://dom4j.sourceforge.net/dom4j-1.5.2/apidocs/index.html">dom4j-1.5.2</a>
                                         <a class="dropdown-item" href="http://dom4j.sourceforge.net/dom4j-1.4/apidocs/index.html">dom4j-1.4</a>
                                         <hr />
-                                        <a class="dropdown-item" href="{github}/dom4j/wiki">Wiki</a>
-                                        <a class="dropdown-item" href="{github}/dom4j/wiki/Cookbook">Cookbook</a>
-                                        <a class="dropdown-item" href="{github}/dom4j/wiki/FAQ">FAQ</a>
+                                        <a class="dropdown-item" href="https://github.com/dom4j/dom4j/wiki">Wiki</a>
+                                        <a class="dropdown-item" href="https://github.com/dom4j/dom4j/wiki/Cookbook">Cookbook</a>
+                                        <a class="dropdown-item" href="https://github.com/dom4j/dom4j/wiki/FAQ">FAQ</a>
                                     </div>
                                 </li>
                                 <li class="nav-item">

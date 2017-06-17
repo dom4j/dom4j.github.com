@@ -36,22 +36,7 @@ body {
 .released {
   padding-top: .7rem; }
 
-/*
-.btn-panel {
-  padding: 0 10px;
-  border: 1px solid transparent;
-  border-radius: 4px;
-
-  &.btn-panel-attic {
-    border-color: silver;
-    background-image: linear-gradient(to bottom, white 0,silver 100%);
-  }
-
-  &.btn-panel-current {
-    border-color: lime;
-    background-image: linear-gradient(to bottom, white 0,lime 100%);
-  }
-}
-*/
+.navbar-inpage {
+  z-index: 999; }
 
 /*# sourceMappingURL=main.css.map */

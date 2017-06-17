@@ -1,0 +1,57 @@
+.logo-text {
+  color: blue; }
+
+.logo-number {
+  color: red; }
+
+.logo-bracket {
+  color: black; }
+
+.navbar-brand .logo-text {
+  color: #8080ff; }
+
+.navbar-brand .logo-number {
+  color: #ff8080; }
+
+.navbar-brand .logo-bracket {
+  color: white; }
+
+.jumbotron .logo-text {
+  color: blue; }
+
+.jumbotron .logo-number {
+  color: red; }
+
+.jumbotron .logo-bracket {
+  color: grey; }
+
+body {
+  padding: 1.5rem 0; }
+
+.header {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem; }
+
+.released {
+  padding-top: .7rem; }
+
+/*
+.btn-panel {
+  padding: 0 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  &.btn-panel-attic {
+    border-color: silver;
+    background-image: linear-gradient(to bottom, white 0,silver 100%);
+  }
+
+  &.btn-panel-current {
+    border-color: lime;
+    background-image: linear-gradient(to bottom, white 0,lime 100%);
+  }
+}
+*/
+
+/*# sourceMappingURL=main.css.map */

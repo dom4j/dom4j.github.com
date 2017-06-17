@@ -20,10 +20,12 @@
                       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
                       integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
                       crossorigin="anonymous"/>
+                <!-- Font Awesome -->
+                <link rel="stylesheet" href="static/css/font-awesome.min.css"/>
                 <!-- Prism -->
-                <link rel="stylesheet" href="static/prism.css"/>
+                <link rel="stylesheet" href="static/css/prism.css"/>
                 <!-- local -->
-                <link rel="stylesheet" href="static/main.css"/>
+                <link rel="stylesheet" href="static/css/main.css"/>
             </head>
             <body id="top">
                 <xsl:call-template name="copy-attributes-from">
@@ -53,7 +55,7 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="https://github.com/dom4j/dom4j">Contribute</a>
+                                    <a class="nav-link" href="https://github.com/dom4j/dom4j" title="Contribute on GitHub"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
                                 </li>
                             </ul>
                         </nav>
@@ -77,9 +79,9 @@
                 <!-- Clipboard (pro Prism) -->
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
                 <!-- Prism -->
-                <script src="static/prism.js"></script>
+                <script src="static/js/prism.js"></script>
                 <!-- local -->
-                <script src="static/main.js"></script>
+                <script src="static/js/main.js"></script>
             </body>
         </html>
     </xsl:template>

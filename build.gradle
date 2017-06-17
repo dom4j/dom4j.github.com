@@ -23,5 +23,5 @@ task sass(type: io.freefair.gradle.plugins.jsass.SassCompile) {
     description 'Build SASS files.'
 
     sourceDir = file('src/main/sass')
-    destinationDir = new File(buildDir, 'static')
+    destinationDir = new File(buildDir, 'static/css')
 }

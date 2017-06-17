@@ -25,3 +25,8 @@ task sass(type: io.freefair.gradle.plugins.jsass.SassCompile) {
     sourceDir = file('src/main/sass')
     destinationDir = new File(buildDir, 'static/css')
 }
+
+task build(dependsOn: [staticFiles, sass, 'xslt']) {
+    group 'web'
+    description 'Build whole website'
+}

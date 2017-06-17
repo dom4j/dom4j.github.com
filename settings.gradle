@@ -1,0 +1,8 @@
+pluginManagement {
+    repositories {
+        maven {
+            url 'C:\\Users\\Filip\\.m2\\repository'
+        }
+        gradlePluginPortal()
+    }
+}

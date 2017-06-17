@@ -1,0 +1,27 @@
+plugins {
+    id 'com.github.eerohele.saxon-gradle' version '0.2.2'
+    id 'io.freefair.jsass-base' version '0.6.0'
+}
+
+group 'org.dom4j'
+
+xslt {
+    stylesheet 'src/main/xslt/main.xsl'
+    input fileTree(dir: 'src/main/web', include: '*.xhtml')
+}
+
+task staticFiles(type: Copy) {
+    group 'web'
+    description 'Copy static files.'
+
+    from(file('src/main/static'))
+    into(new File(buildDir, 'static'))
+}
+
+task sass(type: io.freefair.gradle.plugins.jsass.SassCompile) {
+    group 'web'
+    description 'Build SASS files.'
+
+    sourceDir = file('src/main/sass')
+    destinationDir = new File(buildDir, 'static')
+}

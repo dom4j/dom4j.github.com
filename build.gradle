@@ -1,5 +1,5 @@
 plugins {
-    id 'com.github.eerohele.saxon-gradle' version '0.2.2'
+    id 'com.github.eerohele.saxon-gradle' version '0.3.0'
     id 'io.freefair.jsass-base' version '0.6.0'
 }
 

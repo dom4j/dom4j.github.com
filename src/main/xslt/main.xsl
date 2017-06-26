@@ -44,7 +44,7 @@
                                     <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Documentation</a>
                                     <div class="dropdown-menu">
                                         <h6 class="dropdown-header">Javadoc</h6>
-                                        <a class="dropdown-item" href="/javadoc/2.0.0/">dom4j-2.0.0</a>
+                                        <a class="dropdown-item" href="/javadoc/2.0.1/">dom4j-2.0.1</a>
                                         <a class="dropdown-item" href="/javadoc/1.6.1/">dom4j-1.6.1</a>
                                         <a class="dropdown-item" href="http://dom4j.sourceforge.net/dom4j-1.5.2/apidocs/index.html">dom4j-1.5.2</a>
                                         <a class="dropdown-item" href="http://dom4j.sourceforge.net/dom4j-1.4/apidocs/index.html">dom4j-1.4</a>

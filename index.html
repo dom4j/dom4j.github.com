@@ -377,6 +377,7 @@ public class Foo {
                   <pre data-language="java"><code class="language-java line-numbers">
   FileWriter out = new FileWriter("foo.xml");
   document.write(out);
+  out.close();
 </code></pre>
                   <p>If you want to be able to change the format of the output, such as pretty printing
                      or a compact format, or you want to be able to work with <code>Writer</code>

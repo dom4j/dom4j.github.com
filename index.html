@@ -394,7 +394,7 @@ public class Foo {
     public void write(Document document) throws IOException {
 
         // lets write to a file
-        try (new FileWriter("output.xml")) {
+        try (FileWriter fileWiter = new FileWriter("output.xml")) {
             XMLWriter writer = new XMLWriter(fileWriter);
             writer.write( document );
             writer.close();
@@ -410,6 +410,7 @@ public class Foo {
         format = OutputFormat.createCompactFormat();
         writer = new XMLWriter(System.out, format);
         writer.write(document);
+	writer.close();
     }
 }
 </code></pre>

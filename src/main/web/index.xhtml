@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <title></title>
@@ -167,7 +167,7 @@ public class Foo {
         }
 
         // iterate through attributes of root
-        for (Iterator&lt;ttribute&gt; it = root.attributeIterator(); it.hasNext();) {
+        for (Iterator&lt;Attribute&gt; it = root.attributeIterator(); it.hasNext();) {
             Attribute attribute = it.next();
             // do something
         }
@@ -270,6 +270,7 @@ public class Foo {
         <pre data-language="java">
   FileWriter out = new FileWriter("foo.xml");
   document.write(out);
+  out.close();
 </pre>
         <p>If you want to be able to change the format of the output, such as pretty printing or a compact format, or you want to be able to work with <code>Writer</code>
             objects or <code>OutputStream</code> objects as the destination, then you can use the <code>XMLWriter</code> class.</p>
@@ -284,7 +285,7 @@ public class Foo {
     public void write(Document document) throws IOException {
 
         // lets write to a file
-        try (new FileWriter("output.xml")) {
+        try (FileWriter fileWiter = new FileWriter("output.xml")) {
             XMLWriter writer = new XMLWriter(fileWriter);
             writer.write( document );
             writer.close();
@@ -300,6 +301,7 @@ public class Foo {
         format = OutputFormat.createCompactFormat();
         writer = new XMLWriter(System.out, format);
         writer.write(document);
+	writer.close();
     }
 }
 </pre>

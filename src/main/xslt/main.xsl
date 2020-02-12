@@ -65,7 +65,7 @@
                         </h3>
                     </div>
 
-                    <xsl:apply-templates select="/html/body"/>
+                    <xsl:apply-templates select="/html/body/node()"/>
                 </div>
                 <!-- Bootstrap 4 -->
                 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
@@ -133,7 +133,7 @@
         </xsl:copy>
     </xsl:template>
 
-    <xsl:template match="div[@class='dropdown']">
+    <xsl:template match="div[@class='dropdown']" priority="10">
         <xsl:copy>
             <xsl:call-template name="copy-attributes"/>
             <xsl:apply-templates select="*[1]"/>
@@ -171,7 +171,7 @@
         </xsl:copy>
     </xsl:template>
 
-    <xsl:template match="div[@class='dropdown']/hr">
+    <xsl:template match="div[@class='dropdown']/hr" priority="10">
         <div class="dropdown-divider"></div>
     </xsl:template>
 
